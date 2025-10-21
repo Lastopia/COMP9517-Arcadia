@@ -1,0 +1,14 @@
+{
+  "attachmentFolderPath": "./附件",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "笔记",
+  "spellcheck": false,
+  "readableLineLength": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

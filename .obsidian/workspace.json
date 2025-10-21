@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "f906dcd0142f50a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "330b9bfce1a2ade7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6321ec3733b29d18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "46e6b5ae4dfc18bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7e9f8c03ece9396",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "267ba0460ef940ac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3c45384fb4b1bdbd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "114ef4b167d3b320",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "1a028275f2a58618",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV/96_深度学习实验手册.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "96_深度学习实验手册"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dd706140d3a03b2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "06f9d80c10cae527",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62f83a3920173f18",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "课堂笔记/COMP9024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "COMP9024 的反向链接列表"
+            }
+          },
+          {
+            "id": "823f37dbdce35683",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "课堂笔记/COMP9024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "COMP9024 的出链列表"
+            }
+          },
+          {
+            "id": "207cb348d896f7db",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b775b1e32f356577",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "课堂笔记/COMP9024.md"
+              },
+              "icon": "lucide-list",
+              "title": "COMP9024 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "media-extended:Open media": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "6321ec3733b29d18",
+  "lastOpenFiles": [
+    "README.md",
+    "文件管理器.base",
+    "RUST.md",
+    "9517 Program 害虫识别.md",
+    "附件/Pasted image 20251021190033.png",
+    "附件/Pasted image 20251021185908.png",
+    "附件/Pasted image 20251021180212.png",
+    "附件/Pasted image 20251021180059.png",
+    "附件/Pasted image 20251021175744.png",
+    "附件/Pasted image 20251021175618.png",
+    "附件/Pasted image 20251021175500.png",
+    "附件/Pasted image 20251021175446.png",
+    "附件/Pasted image 20251021175327.png",
+    "附件/Pasted image 20251021122751.png",
+    "Proposal.md",
+    "UE Notes.md",
+    "日志.md",
+    "Untitled.md",
+    "未命名 2.base",
+    "未命名 1.base",
+    "数学.md",
+    "AI 工具库手册.md",
+    "附件",
+    "CV-Tree.md",
+    "机器学习.md",
+    "COMP9331/Ass_Report.md",
+    "GESO9820 复习.md",
+    "COMP9417 复习.md",
+    "COMP9417/COMP 9417 Notes.md",
+    "COMP9417/Assignment 1.md",
+    "未命名 1.md",
+    "COMP9417/未命名 1.md",
+    "COMP9417/复习.md",
+    "COMP9417/Week 2.md",
+    "COMP9417/Week 1.md",
+    "COMP9417/未命名.md",
+    "COMP9331/Lab 5.md",
+    "COMP9331/Lab 3.md",
+    "COMP9331/课程笔记.md",
+    "COMP9331/附件",
+    "COMP9417/附件",
+    "COMP9417",
+    "COMP9331",
+    "代办事项/ACS_GuideToSkilledMigration_April2024.pdf",
+    "代办事项/附件"
+  ]
+}
