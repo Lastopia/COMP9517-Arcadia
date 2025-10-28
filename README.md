@@ -9,7 +9,10 @@
 - CNN - ResNet
 - CNN - Faster R-CNN
 
-
+`Chenyi Li (Heloise):`
+- YOLO
+- Transformer - DETR
+- XAI (Maybe if have time)
 
 ## 任务简报
 `目标`： 识别农业害虫
