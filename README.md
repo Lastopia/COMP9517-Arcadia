@@ -15,6 +15,11 @@
 - Transformer - DETR
 - XAI (Maybe if have time)
 
+`Anna:`
+机器学习部分
+- SIFT/LBP
+- SVM/KNN
+
 ## 任务简报
 `目标`： 识别农业害虫
 `数据集`：
