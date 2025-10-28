@@ -11,10 +11,15 @@
             "id": "13fe9c88eecc1915",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -177,7 +182,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "267ba0460ef940ac",
+  "active": "13fe9c88eecc1915",
   "lastOpenFiles": [
     "README.md",
     "文件管理器.base",
