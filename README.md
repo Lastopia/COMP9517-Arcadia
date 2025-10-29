@@ -20,6 +20,9 @@
 - SIFT/LBP
 - SVM/KNN
 
+ `jjanjamm:`
+ YOLOv8+MobileNet
+
 ## 任务简报
 `目标`： 识别农业害虫
 `数据集`：
