@@ -11,7 +11,7 @@
 - CNN - Faster R-CNN
 
 `Chenyi Li (Heloise):`
-- YOLO
+- YOLO - v11
 - Transformer - DETR
 - XAI (Maybe if have time)
 
