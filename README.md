@@ -12,7 +12,7 @@
 
 `Chenyi Li (Heloise):`
 - YOLO - v11
-- Transformer - DETR
+- Transformer - RT-DETR
 - XAI (Maybe if have time)
 
 `Anna:`
