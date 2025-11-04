@@ -23,6 +23,10 @@
  `jjanjamm:`
  YOLOv8+MobileNet
 
+ `YiyangEmily:`
+ -inceptionV3
+ -EfficentNet
+
 ## 任务简报
 `目标`： 识别农业害虫
 `数据集`：
