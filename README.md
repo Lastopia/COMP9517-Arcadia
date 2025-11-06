@@ -3,6 +3,7 @@
 ### week6
 确定自己想要写的模型，了解这些模型，写这些模型的代码并封装起来，要求的效果是，能够直接在其他函数里面调用
 大家把自己想要写的模型写在下面
+
 `Franco:`
 - CNN - LeNet
 - CNN - VGG
@@ -10,9 +11,21 @@
 - CNN - Faster R-CNN
 
 `Chenyi Li (Heloise):`
-- YOLO
-- Transformer - DETR
+- YOLO - v11
+- Transformer - RT-DETR
 - XAI (Maybe if have time)
+
+`Anna:`
+机器学习部分
+- SIFT/LBP
+- SVM/KNN
+
+ `jjanjamm:`
+ YOLOv8+MobileNet
+
+ `YiyangEmily:`
+ -inceptionV3
+ -EfficentNet
 
 ## 任务简报
 `目标`： 识别农业害虫
@@ -73,3 +86,23 @@ Yolo 不同版本的比较，比如几个典型的版本 (v3, v5, v8, v11)
 - K近邻 KNN
 - 随机森林 Random Forest
 - 逻辑回归
+
+## Citation
+@software{yolo11_ultralytics,
+  author = {Glenn Jocher and Jing Qiu},
+  title = {Ultralytics YOLO11},
+  version = {11.0.0},
+  year = {2024},
+  url = {https://github.com/ultralytics/ultralytics},
+  orcid = {0000-0001-5950-6979, 0000-0003-3783-7069},
+  license = {AGPL-3.0}
+}
+
+@misc{lv2023detrs,
+      title={DETRs Beat YOLOs on Real-time Object Detection},
+      author={Wenyu Lv and Shangliang Xu and Yian Zhao and Guanzhong Wang and Jinman Wei and Cheng Cui and Yuning Du and Qingqing Dang and Yi Liu},
+      year={2023},
+      eprint={2304.08069},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
