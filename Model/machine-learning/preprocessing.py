@@ -49,11 +49,11 @@ def unsharp_mask(image, sigma = 1.0, alpha = 0.5, ksize = 5):
 def preprocess(image, apply_sharpen = True, output_rgb=False):
 
     hsv = convert_to_hsv(image)
-    hsv_clahe = apply_clahe_on_v(hsv)
-    hsv_smooth = gaussian_blur(hsv_clahe, sigma=1.0)
+    # hsv_smooth = apply_clahe_on_v(hsv)
+    hsv_smooth = cv2.GaussianBlur(hsv, (3, 3), 0.3)
 
-    if apply_sharpen:
-        hsv_smooth = unsharp_mask(hsv_smooth, sigma=1.0, alpha=0.7)
+    # if apply_sharpen:
+    #     hsv_smooth = unsharp_mask(hsv_smooth, sigma=1.0, alpha=0.7)
 
     if output_rgb:
         return cv2.cvtColor(hsv_smooth, cv2.COLOR_HSV2RGB)
