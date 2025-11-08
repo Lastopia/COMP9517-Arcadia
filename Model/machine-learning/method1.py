@@ -1,10 +1,11 @@
 import os
 import numpy as np
+import cv2
 from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
 from datetime import datetime
 from sklearn.decomposition import PCA
-
+from sklearn.preprocessing import StandardScaler
 from sift import extract_sift_features
 from hog import extract_hog_features
 from svm import train_svm, evaluate_svm
@@ -36,18 +37,22 @@ def evaluate_model(name, real_label, predicted_label):
     # plt.show()
 
 
-def extract_features(processed_img):
-    X = []
-    Y = []
+def extract_features(processed_img): 
+    X = [] 
+    Y = [] 
+    for (id, img) in processed_img: 
+        sift_descriptors = extract_sift_features(img, 150) 
 
-    for (id, img) in processed_img:
-        sift_descriptors = extract_sift_features(img, 150)
-        hog_descriptors = extract_hog_features(img)
-        descriptors = np.hstack((sift_descriptors, hog_descriptors))
-
-        X.append(descriptors)
-        Y.append(id)
-
+        hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV) 
+        mask = cv2.inRange(hsv, (0, 30, 50), (180, 255, 255)) 
+        # keep only mid-bright objects
+        masked = cv2.bitwise_and(img, img, mask=mask) 
+        hog_descriptors = extract_hog_features(masked) 
+        
+        descriptors = np.hstack((sift_descriptors, hog_descriptors)) 
+        X.append(descriptors) 
+        Y.append(id) 
+        
     return np.array(X), np.array(Y)
 
 if __name__ == "__main__":
@@ -68,8 +73,7 @@ if __name__ == "__main__":
     print(np.unique(y_test, return_counts=True))
 
     now = datetime.now()
-    # Format as human-readable string
-    print(now.strftime("%Y-%m-%d %H:%M:%S"))
+
     with open('report', 'a+') as file:
         file.write(f"{now.strftime('%Y-%m-%d %H:%M:%S')} {accuracy_score(pre_label, y_test):.4f}\n")
 
