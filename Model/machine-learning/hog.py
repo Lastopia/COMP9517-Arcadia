@@ -4,7 +4,7 @@ import numpy as np
 
 def extract_hog_features(image,
                          orientations=9,
-                         pixels_per_cell=(8, 8),
+                         pixels_per_cell=(4, 4),
                          cells_per_block=(2, 2),
                          resize_shape=(128, 128)):
 

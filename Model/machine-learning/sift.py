@@ -8,8 +8,8 @@ def extract_sift_features(image, max_features=200):
     keypoints, descriptors = sift.detectAndCompute(gray, None)
 
     if descriptors is None or len(descriptors) == 0:
-        return np.zeros(128, dtype=np.float32)
+        return np.zeros(128, dtype=np.float32), []
 
     sift_vector = np.mean(descriptors, axis=0)
     
-    return sift_vector
+    return sift_vector, keypoints
