@@ -3,6 +3,7 @@ import numpy as np
 import os, re
 import matplotlib.pyplot as plt
 import numpy as np
+from tqdm import tqdm
 
 """
 Input (RGB image)
@@ -74,10 +75,12 @@ Returns:
 """
 def read_images(img_path, label_path, apply_preprocess = True, apply_sharpen = True, output_rgb=False):
     images = []
-    for filename in os.listdir(img_path):
+    file_list = [f for f in os.listdir(img_path) if f.lower().endswith(".jpg")]
 
-        if not filename.lower().endswith(".jpg"):
-            continue
+    for filename in tqdm(file_list, desc="Reading images", unit="img"):
+
+        # if not filename.lower().endswith(".jpg"):
+        #     continue
 
         img = cv2.imread(f"{img_path}/{filename}", cv2.IMREAD_COLOR)
         h, w, c = img.shape
