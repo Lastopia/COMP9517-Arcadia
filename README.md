@@ -13,7 +13,7 @@
 `Chenyi Li (Heloise):`
 - YOLO - v11
 - Transformer - RT-DETR
-- XAI (Maybe if have time)
+- XAI for yolov11 & RT-DETR
 
 `Anna:`
 机器学习部分
