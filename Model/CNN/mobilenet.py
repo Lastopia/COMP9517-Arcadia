@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+import torchvision.models as models
+import torchvision.transforms as transforms
+
 class MobileNetClassifier:
     def __init__(self, num_classes=12, model_type='mobilenet_v3_small', pretrained=True):
         self.num_classes = num_classes
