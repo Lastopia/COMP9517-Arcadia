@@ -46,7 +46,7 @@ class Build(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         )
-        # b1和ResNet几乎一模一样。
+        # b1 is simlar as the ResNet
 
         num_ch,growth_rate = 64,32
         num_conv_in_dense_blocks = [4,4,4,4]
@@ -59,7 +59,6 @@ class Build(nn.Module):
             # 也就是如果不是最后一个的话
                 blks.append(transition_block(num_ch,num_ch//2))
                 num_ch = num_ch // 2
-                # // 代表整除
         self.net = nn.Sequential(
             b1,
             *blks,
@@ -67,7 +66,7 @@ class Build(nn.Module):
             nn.ReLU(),
             nn.AdaptiveAvgPool2d((1,1)),
             nn.Flatten(),
-            nn.Linear(num_ch,10)
+            nn.Linear(num_ch,num_classes)
         )
         if init_weights:
             self._initialize_weights()
