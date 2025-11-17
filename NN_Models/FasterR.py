@@ -1,6 +1,4 @@
-import torch
 import torch.nn as nn
-import torchvision
 from torchvision.models import resnet50, ResNet50_Weights
 from torchvision.ops import RoIAlign
 
@@ -43,7 +41,7 @@ class Build(nn.Module):
         x = self.relu(self.fc2(x))
         
         # 输出类别分数和边框回归
-        cls_logits = self.cls_score(x)           # (num_rois, num_classes)
-        bbox_preds = self.bbox_pred(x)           # (num_rois, num_classes*4)
+        cls_logits = self.cls_score(x)
+        bbox_preds = self.bbox_pred(x)      
         
         return cls_logits, bbox_preds
