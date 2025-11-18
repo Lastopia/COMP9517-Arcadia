@@ -47,14 +47,10 @@ def unsharp_mask(image, sigma = 1.0, alpha = 0.5, ksize = 5):
     return sharpened
 
 
-def preprocess(image, apply_sharpen = True, output_rgb=False):
+def preprocess(image, output_rgb=False):
 
     hsv = convert_to_hsv(image)
-    # hsv_smooth = apply_clahe_on_v(hsv)
     hsv_smooth = cv2.GaussianBlur(hsv, (3, 3), 0.3)
-
-    # if apply_sharpen:
-    #     hsv_smooth = unsharp_mask(hsv_smooth, sigma=1.0, alpha=0.7)
 
     if output_rgb:
         return cv2.cvtColor(hsv_smooth, cv2.COLOR_HSV2RGB)
@@ -73,14 +69,11 @@ Returns:
         - <class_id> : int              -> Object class label.
         - <crop_img> : numpy.ndarray    -> Cropped image region of the detected object.
 """
-def read_images(img_path, label_path, apply_preprocess = True, apply_sharpen = True, output_rgb=False):
+def read_images(img_path, label_path, apply_preprocess = True, output_rgb=False):
     images = []
     file_list = [f for f in os.listdir(img_path) if f.lower().endswith(".jpg")]
 
     for filename in tqdm(file_list, desc="Reading images", unit="img"):
-
-        # if not filename.lower().endswith(".jpg"):
-        #     continue
 
         img = cv2.imread(f"{img_path}/{filename}", cv2.IMREAD_COLOR)
         h, w, c = img.shape
@@ -105,7 +98,7 @@ def read_images(img_path, label_path, apply_preprocess = True, apply_sharpen = T
 
                 crop_img = img[y1:y2, x1:x2]
                 if apply_preprocess:
-                    crop_img = preprocess(crop_img, apply_sharpen, output_rgb)
+                    crop_img = preprocess(crop_img, output_rgb)
 
                 images.append((int(class_id), crop_img))
 
