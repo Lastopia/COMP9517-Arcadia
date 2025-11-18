@@ -106,3 +106,14 @@ Yolo 不同版本的比较，比如几个典型的版本 (v3, v5, v8, v11)
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+
+@misc{jacobgilpytorchcam,
+  title={PyTorch library for CAM methods},
+  author={Jacob Gildenblat and contributors},
+  year={2021},
+  publisher={GitHub},
+  howpublished={\url{https://github.com/jacobgil/pytorch-grad-cam}},
+}
+
+The XAI for YOLOv11 of this project makes use of the YOLO-V12-CAM repository:
+https://github.com/rigvedrs/YOLO-V12-CAM
