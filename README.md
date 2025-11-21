@@ -20,8 +20,8 @@ We use the AgroPest-12 dataset, containing 12 pest classes with annotated boundi
   - **Source for rtdetr XAI**：https://github.com/jacobgil/pytorch-grad-cam
 
 `Yiyang Shen:`
-- inceptionV3
-- EfficentNet
+- InceptionV3
+- EfficentNetB0
 
 `Yutong Zhang:`
 - CNN - VGG
