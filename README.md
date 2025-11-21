@@ -40,6 +40,8 @@ We use the AgroPest-12 dataset, containing 12 pest classes with annotated boundi
 ## Environment Setup
 ```bash
 pip install ultralytics grad-cam opencv-python ttach
+pip install kagglehub pyyaml torch torchvision matplotlib opencv-python tqdm scikit-image numpy scikit-learn seaborn
+
 ```
 
 ## References
