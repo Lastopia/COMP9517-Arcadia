@@ -12,8 +12,12 @@ We use the AgroPest-12 dataset, containing 12 pest classes with annotated boundi
 ## Team Contributions
 `Chenyi Li:`
 - YOLO - v11
+  - **Source**：https://github.com/ultralytics/ultralytics
 - Transformer - RT-DETR
+  - **Source**：https://github.com/lyuwenyu/RT-DETR
 - XAI for yolov11 & RT-DETR
+  - **Source for yolov11 XAI**：https://github.com/rigvedrs/YOLO-V12-CAM
+  - **Source for rtdetr XAI**：https://github.com/jacobgil/pytorch-grad-cam
 
 `Yiyang Shen:`
 - inceptionV3
