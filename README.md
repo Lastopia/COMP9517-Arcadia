@@ -24,9 +24,10 @@ We use the AgroPest-12 dataset, containing 12 pest classes with annotated boundi
 - EfficentNet
 
 `Yutong Zhang:`
-- CNN - LeNet
 - CNN - VGG
+- CNN - GoogleNet
 - CNN - ResNet
+- CNN - DenseNet
 - CNN - Faster R-CNN
 
  `Yian Zhu:`
